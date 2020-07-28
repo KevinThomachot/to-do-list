@@ -1,0 +1,8 @@
+<input #taskInput><button (click)="addTask(taskInput.value)">+</button>
+
+<ul>
+    <li *ngFor="let task of tasks">
+        <button (click)="removeTask(tasks)">Supprimer</button>
+        {{task}}
+    </li>
+</ul>
